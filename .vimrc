@@ -24,3 +24,6 @@ set showmatch
 
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
+
+" allows python build in a new screen with the <f5> key; auto saving the file.
+imap <F5> <Esc>:w<CR>:!clear;python %<CR>
